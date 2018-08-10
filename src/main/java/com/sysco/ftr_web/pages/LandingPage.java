@@ -21,6 +21,8 @@ public class LandingPage {
     private By chkRememberMe = By.xpath("//span[@class='langable age_remember_me_basic']");
     private By btnEnter = By.id("age_confirm_btn");
     private By lblMessage=By.xpath("//span[contains(text(),'Sorry, your age')]");
+    private By lnkMyAccount=By.xpath("//a[@title='My Account']");
+    private By msgBirthDate=By.xpath("//span[text()='Please enter your date of birth']");
 
 
 
@@ -83,8 +85,9 @@ public class LandingPage {
         bunderbergUI.click(chkRememberMe);
     }
 
-    public void clickBtnEnter() {
+    public void clickBtnEnter()  {
         bunderbergUI.click(btnEnter);
+        bunderbergUI.sleep(2);
     }
 
     public String getMessage(){
@@ -101,6 +104,14 @@ public class LandingPage {
 
 
 
+    }
+    public void clickLnkMyAccount(){
+        bunderbergUI.click(lnkMyAccount);
+        bunderbergUI.sleep(2);
+    }
+
+    public String getMsgBirthDtae(){
+        return bunderbergUI.getText(lblBirthdate)
     }
 
 

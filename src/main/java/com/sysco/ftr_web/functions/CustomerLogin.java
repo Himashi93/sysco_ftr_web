@@ -3,6 +3,8 @@ package com.sysco.ftr_web.functions;
 import com.sysco.ftr_web.common.Constants;
 import com.sysco.ftr_web.pages.CustomerLoginPage;
 
+import java.io.UnsupportedEncodingException;
+
 
 public class CustomerLogin {
 
@@ -25,7 +27,7 @@ public class CustomerLogin {
         return customerLoginPage.isLoginButtonVisible();
 
     }
-    public static boolean isLoginButtonEnabled(){
+    public static boolean isLoginButtonEnabled()  {
         return customerLoginPage.isLoginButtonEnabled();
     }
     public static boolean isEmailTextFieldDisplayed(){
@@ -36,12 +38,14 @@ public class CustomerLogin {
     }
 
 
-    public static void loginUsingValidCredentials() {
+    public static void loginUsingValidCredentials()  {
         customerLoginPage.enterUsername(Constants.USERNAME);
         customerLoginPage.enterPassword(Constants.PASSWORD);
         customerLoginPage.clickBtnLogin();
     }
     public static void loginUsingInvalidEmail() {
+        customerLoginPage.clearTxtEmail();
+        customerLoginPage.clearTxtPassword();
         String invalidEmail="abc@gmail.com";
         customerLoginPage.enterUsername(invalidEmail);
         customerLoginPage.enterPassword(Constants.PASSWORD);
@@ -49,6 +53,8 @@ public class CustomerLogin {
     }
 
     public static void loginUsingInvalidPassword() {
+        customerLoginPage.clearTxtEmail();
+        customerLoginPage.clearTxtPassword();
         String invalidPassword="123";
         customerLoginPage.enterUsername(Constants.USERNAME);
         customerLoginPage.enterPassword(invalidPassword);
@@ -56,8 +62,8 @@ public class CustomerLogin {
     }
 
     public static void loginUsingEmptyCredentials() {
-        customerLoginPage.enterUsername("");
-        customerLoginPage.enterPassword("");
+        customerLoginPage.clearTxtEmail();
+        customerLoginPage.clearTxtPassword();
         customerLoginPage.clickBtnLogin();
     }
 
@@ -71,6 +77,16 @@ public class CustomerLogin {
     public static String getPasswordRequiredMessage(){
         return customerLoginPage.getPasswordRequiredMessage();
     }
+    public static void waitTillHomePageIsLoaded(){
+        customerLoginPage.waitTillHomePageIsLoaded();
+    }
+    public static void waitTillCustomerLoginPageLoaded(){
 
+        customerLoginPage.waitTillCustomerLoginPageIsLoaded();
+    }
+    public static String getMyAccountTitle(){
+        return customerLoginPage.getMyAccountTitle();
+
+    }
 }
 

@@ -3,12 +3,15 @@ package com.sysco.ftr_web.pages;
 import com.syscolab.qe.core.ui.SyscoLabUI;
 import org.openqa.selenium.By;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
 public class CheckOutFirstPage extends CustomerLoginPage {
-    protected static SyscoLabUI bunderbergUI;
-    private By txtFirstName= By.id("billing:firstname");
-    private By txtLastName=By.id("billing:lastname");
-    private By txtAddressOne=By.id("billing:street1");
-    private By txtContactNumber =By.id("billing:telephone1");
+
+    private By txtFirstName= By.xpath("//input[@id='billing:firstname']");
+    private By txtLastName=By.xpath("//input[@id='billing:lastname']");
+    private By txtAddressOne=By.xpath("//input[@id='billing:street1']");
+    private By txtContactNumber =By.xpath("//input[@name='billing[telephone]']");
     private By txtPostCode=By.id("billing:postcodesuburb");
     private By btnContinue=By.xpath("//span[text()='Continue']");
     private By msgAddressRequired=By.id("advice-required-entry-billing:street1");
@@ -24,14 +27,17 @@ public class CheckOutFirstPage extends CustomerLoginPage {
     private By chkAgreement=By.id("agreement-1");
     private By btnPurchaseMyOrder=By.id("payment-method-button");
     private By msgInvalidCreditCardNumber=By.id("advice-validate-cc-type-autodetect-braintree_cc_number");
+    private By btnDeletePostCode=By.xpath("//input[@id='billing:postcodesuburbremove']");
+    private By drpDwnFirstTwoHundered=By.xpath("//div[@id='Autocomplete_billing:postcodesuburb']/div[1]/strong");
+
 
     public String  getFirstName(){
-        return bunderbergUI.getText(txtFirstName);
+        return bunderbergUI.getValue(txtFirstName);
 
     }
 
     public String  getLastName(){
-        return bunderbergUI.getText(txtLastName);
+        return bunderbergUI.getValue(txtLastName);
     }
     public void clearAddressOne(){
         bunderbergUI.clear(txtAddressOne);
@@ -41,7 +47,8 @@ public class CheckOutFirstPage extends CustomerLoginPage {
         bunderbergUI.clear(txtContactNumber);
     }
     public void clearPostCode(){
-        bunderbergUI.clear(txtPostCode);
+        bunderbergUI.click(btnDeletePostCode);
+        bunderbergUI.sleep(5);
     }
     public void clickBtnContinue(){
         bunderbergUI.click(btnContinue);
@@ -61,9 +68,17 @@ public class CheckOutFirstPage extends CustomerLoginPage {
         bunderbergUI.click(btnCloseOFPostalCode);
 
     }
-    public  void setPostalCode(){
+    public  void setPostalCode() throws AWTException {
 
-        bunderbergUI.sendKeys(msgPostCode,"2000");
+        bunderbergUI.sendKeys(txtPostCode,"2000");
+        Robot r = new Robot();
+        r.keyPress(KeyEvent.VK_ENTER);
+        r.keyRelease(KeyEvent.VK_ENTER);
+        bunderbergUI.click(drpDwnFirstTwoHundered);
+        bunderbergUI.sleep(5);
+        bunderbergUI.click(btnContinue);
+        bunderbergUI.sleep(5);
+
 
 
     }
@@ -97,6 +112,18 @@ public class CheckOutFirstPage extends CustomerLoginPage {
     }
     public String getInvalidCreditCardNumberMessage(){
         return bunderbergUI.getText(msgInvalidCreditCardNumber);
+    }
+
+    public void setAddressOne(){
+        bunderbergUI.sendKeys(txtAddressOne,"abcd");
+        bunderbergUI.sleep(5);
+
+    }
+
+    public void setContactNumber(){
+        bunderbergUI.sendKeys(txtContactNumber,"94710996370");
+        bunderbergUI.sleep(5);
+
     }
 
 

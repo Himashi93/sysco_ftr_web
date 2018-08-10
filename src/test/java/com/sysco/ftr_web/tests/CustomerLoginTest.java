@@ -5,17 +5,21 @@ import com.sysco.ftr_web.functions.Landing;
 import com.sysco.ftr_web.functions.MyAccount;
 import com.sysco.ftr_web.utils.TestBase;
 import com.syscolab.qe.core.reporting.SyscoLabListener;
+import com.syscolab.qe.core.reporting.SyscoLabQCenter;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.io.UnsupportedEncodingException;
+
 @Listeners(SyscoLabListener.class)
 public class CustomerLoginTest extends TestBase {
     @BeforeClass
-    public void init(ITestContext iTestContext) {
+    public void init(ITestContext iTestContext)  {
         iTestContext.setAttribute("feature", "CustomerLogin");
+        syscoLabQCenter.setClassName(this.getClass().getName());
         Landing.loadLandingPage();
         Landing.clickDrpDay();
         Landing.clickFirstDate();
@@ -25,59 +29,67 @@ public class CustomerLoginTest extends TestBase {
         Landing.clickNineteenNinetyThreeYear();
         Landing.clickRememberMe();
         Landing.clickEnter();
+        //CustomerLogin.waitTillHomePageIsLoaded();
+        Landing.clickMyAccount();
+        //MyAccount.waitTillMyAccountPageLoaded();
     }
 
-    @Test(description = "TC-2", alwaysRun = true)
-    public static void verifyUIComponenetsOfMyAccountPage() {
+    @Test(description = "TC-3", alwaysRun = true,groups = DONT_QUIT_BROWSER)
+    public static void testVerifyUIComponentsOfCustomerLoginPage()  {
         //CustomerLogin.waitTillCustomerLoginPageLoaded();
-        SoftAssert softAssert=new SoftAssert();
-        softAssert.assertTrue( CustomerLogin.isLoginButtonDisplayed(),"Login button in not displayed");
-        softAssert.assertTrue( CustomerLogin.isLoginButtonEnabled(),"Login button in not enabled");
-        softAssert.assertTrue(CustomerLogin.isEmailTextFieldDisplayed(),"Email text field is not visible");
-        softAssert.assertTrue(CustomerLogin.isPasswordTextFieldDisplayed(),"Password text field is not visible");
+        SoftAssert softAssert = new SoftAssert();
+        // softAssert.assertTrue( CustomerLogin.isLoginButtonDisplayed(),"Login button in not displayed");
+        softAssert.assertTrue(CustomerLogin.isLoginButtonEnabled(), "Login button in not enabled");
+        softAssert.assertTrue(CustomerLogin.isEmailTextFieldDisplayed(), "Email text field is not visible");
+        softAssert.assertTrue(CustomerLogin.isPasswordTextFieldDisplayed(), "Password text field is not visible");
         softAssert.assertAll();
 
     }
 
-    @Test(description = "TC-3", alwaysRun = true)
-    public static void verifyUserCanLoginUsingValidCredentials() {
-        SoftAssert softAssert=new SoftAssert();
-       // CustomerLogin.waitTillCustomerLoginPageLoaded();
+    @Test(description = "TC-4", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER},dependsOnMethods = "testVerifyUIComponentsOfCustomerLoginPage")
+    public static void testVerifyUserCanLoginUsingValidCredentials() {
+
+        CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.loginUsingValidCredentials();
-        String welcomeMessage="HELLO, WILLIAM JACOB!";
-        softAssert.assertEquals(MyAccount.getWelcomeMessage(),welcomeMessage,"Customer was not successfully logged in");
+        String welcomeMessage = "HELLO, WILLIAM JACOB!";
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(MyAccount.getWelcomeMessage(), welcomeMessage, "Customer was not successfully logged in");
+        MyAccount.clickLogout();
+        MyAccount.clickMyAccount();
         softAssert.assertAll();
 
     }
-    @Test(description = "TC-4", alwaysRun = true)
+
+    @Test(description = "TC-5", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER},dependsOnMethods = "testVerifyUserCanLoginUsingValidCredentials")
     public static void testUserLoginUsingInvalidEmail() {
-        SoftAssert softAssert=new SoftAssert();
-        //CustomerLogin.waitTillCustomerLoginPageLoaded();
+        SoftAssert softAssert = new SoftAssert();
+        CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.loginUsingInvalidEmail();
-        String loginMessage="Invalid login or password.";
-        softAssert.assertEquals(CustomerLogin.getInvalidCredentialsMessage(),loginMessage,"Invalid message");
+        String loginMessage = "Invalid login or password.";
+        softAssert.assertEquals(CustomerLogin.getInvalidCredentialsMessage(), loginMessage, "Invalid message");
         softAssert.assertAll();
 
     }
-    @Test(description = "TC-5", alwaysRun = true)
+
+    @Test(description = "TC-6", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER}, dependsOnMethods = "testUserLoginUsingInvalidEmail")
     public static void testUserLoginUsingInvalidPassword() {
-        SoftAssert softAssert=new SoftAssert();
-        //CustomerLogin.waitTillCustomerLoginPageLoaded();
+        SoftAssert softAssert = new SoftAssert();
+        CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.loginUsingInvalidPassword();
-        String loginMessage="Invalid login or password.";
-        softAssert.assertEquals(CustomerLogin.getInvalidCredentialsMessage(),loginMessage,"Invalid message");
+        String loginMessage = "Invalid login or password.";
+        softAssert.assertEquals(CustomerLogin.getInvalidCredentialsMessage(), loginMessage, "Invalid message");
         softAssert.assertAll();
 
     }
 
-    @Test(description = "TC-6", alwaysRun = true)
+    @Test(description = "TC-7", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER}, dependsOnMethods = "testUserLoginUsingInvalidPassword")
     public static void testUserLoginUsingEmptyCredentials() {
-        SoftAssert softAssert=new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         //CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.loginUsingEmptyCredentials();
-        String msgeRequiredField="This is a required field.";
-        softAssert.assertEquals(CustomerLogin.getEmailRequiredMessage(),msgeRequiredField,"Invalid message");
-        softAssert.assertEquals(CustomerLogin.getPasswordRequiredMessage(),msgeRequiredField,"Invalid message");
+        String msgeRequiredField = "This is a required field.";
+        softAssert.assertEquals(CustomerLogin.getEmailRequiredMessage(), msgeRequiredField, "Invalid message");
+        softAssert.assertEquals(CustomerLogin.getPasswordRequiredMessage(), msgeRequiredField, "Invalid message");
         softAssert.assertAll();
 
     }

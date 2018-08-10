@@ -2,6 +2,8 @@ package com.sysco.ftr_web.functions;
 
 import com.sysco.ftr_web.pages.CheckOutFirstPage;
 
+import java.awt.*;
+
 public class CheckOutFirst  {
     private static CheckOutFirstPage checkOutFirstPage=new CheckOutFirstPage();
     public static String getFirstName(){
@@ -39,7 +41,7 @@ public class CheckOutFirst  {
         checkOutFirstPage.clickBtnCloseOfPostalCode();
     }
 
-    public static void setPostalCode(){
+    public static void setPostalCode() throws AWTException {
         checkOutFirstPage.setPostalCode();
 
     }
@@ -72,6 +74,12 @@ public class CheckOutFirst  {
     }
     public static String getInvalidCreditCardNumberMessage(){
         return checkOutFirstPage.getInvalidCreditCardNumberMessage();
+    }
+    public static void setAddressOne(){
+        checkOutFirstPage.setAddressOne();
+    }
+    public static void setContactNumber(){
+        checkOutFirstPage.setContactNumber();
     }
 
 }

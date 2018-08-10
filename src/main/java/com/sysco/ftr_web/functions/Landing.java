@@ -47,7 +47,7 @@ public class Landing {
     public static void clickRememberMe(){
         landingPage.clickChkRememberMe();
     }
-    public static void clickEnter(){
+    public static void clickEnter()  {
         landingPage.clickBtnEnter();
     }
     public static String getMessage(){
@@ -55,6 +55,10 @@ public class Landing {
     }
     public static void deleteAllCookies(){
         landingPage.deleteAllCookies();
+    }
+    public static void clickMyAccount(){
+        landingPage.clickLnkMyAccount();
+
     }
 //public void validateBdayForAgeEighteenPlus(){
 //    landingPage.clickDrpDay();

@@ -19,18 +19,36 @@ import java.util.Properties;
 @Listeners(SyscoLabListener.class)
 public class TestBase {
     private SyscoLabListener testListeners;
-    private SyscoLabQCenter syscoLabQCenter;
+    protected SyscoLabQCenter syscoLabQCenter;
     public static Properties properties;
     protected SoftAssert softAssert;
     protected static final String USE_CURRENT_BROWSER = "USE CURRENT BROWSER";
     protected static final String DONT_QUIT_BROWSER = "DONT QUIT BROWSER";
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void init() {
 
         testListeners = new SyscoLabListener();
         syscoLabQCenter = new SyscoLabQCenter();
+
+        syscoLabQCenter.setProjectName(Constants.TEST_PROJECT);
+        syscoLabQCenter.setEnvironment(Constants.TEST_ENV);
+        syscoLabQCenter.setRelease(Constants.TEST_RELEASE);
+        syscoLabQCenter.setClassName(this.getClass().getName());
     }
+    @AfterClass (alwaysRun = true)
+    public void cleanUp(ITestContext iTestContext) {
+        try {
+            if (Constants.UPDATE_DASHBOARD)
+                SyscoLabReporting.generateJsonFile(SyscoLabListener.getResults(), syscoLabQCenter);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
 
     @BeforeTest
     public void beforeTest() {

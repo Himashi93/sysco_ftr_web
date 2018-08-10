@@ -4,7 +4,7 @@ import com.syscolab.qe.core.ui.SyscoLabUI;
 import org.openqa.selenium.By;
 
 public class CanCoolerPage extends CustomerLoginPage {
-    protected static SyscoLabUI bunderbergUI;
+
     private By lblBunderbergCanCooler=By.xpath("//h1[text()='Bundaberg Can Cooler - Yellow                            ']");
     private By btnAddTOCart=By.xpath("//button[@title='Add to Cart']");
     private By lblCanCoolerInCart=By.xpath("//a[text()='Bundaberg Can Cooler - Yellow']");
@@ -28,5 +28,6 @@ public class CanCoolerPage extends CustomerLoginPage {
 
     public void clickBtnCheckout() {
        bunderbergUI.click(btnCheckout);
+       bunderbergUI.sleep(3);
     }
 }
