@@ -1,6 +1,5 @@
 package com.sysco.ftr_web.pages;
 
-import com.syscolab.qe.core.ui.SyscoLabUI;
 import org.openqa.selenium.By;
 
 import java.awt.*;
@@ -28,7 +27,7 @@ public class CheckOutFirstPage extends CustomerLoginPage {
     private By btnPurchaseMyOrder=By.id("payment-method-button");
     private By msgInvalidCreditCardNumber=By.id("advice-validate-cc-type-autodetect-braintree_cc_number");
     private By btnDeletePostCode=By.xpath("//input[@id='billing:postcodesuburbremove']");
-    private By drpDwnFirstTwoHundered=By.xpath("//div[@id='Autocomplete_billing:postcodesuburb']/div[1]/strong");
+    private By drpDwnFirstTwoHundred =By.xpath("//div[@id='Autocomplete_billing:postcodesuburb']/div[1]");
 
 
     public String  getFirstName(){
@@ -74,7 +73,7 @@ public class CheckOutFirstPage extends CustomerLoginPage {
         Robot r = new Robot();
         r.keyPress(KeyEvent.VK_ENTER);
         r.keyRelease(KeyEvent.VK_ENTER);
-        bunderbergUI.click(drpDwnFirstTwoHundered);
+        bunderbergUI.click(drpDwnFirstTwoHundred);
         bunderbergUI.sleep(5);
         bunderbergUI.click(btnContinue);
         bunderbergUI.sleep(5);
@@ -124,6 +123,11 @@ public class CheckOutFirstPage extends CustomerLoginPage {
         bunderbergUI.sendKeys(txtContactNumber,"94710996370");
         bunderbergUI.sleep(5);
 
+    }
+    public static void quitDriver() {
+        if (bunderbergUI != null) {
+            bunderbergUI.quit();
+        }
     }
 
 

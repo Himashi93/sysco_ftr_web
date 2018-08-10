@@ -3,6 +3,7 @@ package com.sysco.ftr_web.tests;
 import com.sysco.ftr_web.functions.*;
 import com.sysco.ftr_web.utils.TestBase;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -13,7 +14,8 @@ import java.io.UnsupportedEncodingException;
 public class CartTest extends TestBase {
     @BeforeClass
     public void init(ITestContext iTestContext) throws UnsupportedEncodingException {
-        iTestContext.setAttribute("feature", "Cart");
+        syscoLabQCenter.setModule("report_himashi");
+        syscoLabQCenter.setFeature("Bundabergrum - Checkout");
         syscoLabQCenter.setClassName(CartTest.class.getName());
         Landing.loadLandingPage();
         Landing.clickDrpDay();
@@ -62,7 +64,7 @@ public class CartTest extends TestBase {
 
     }
 
-    @Test(description = "TC-13", alwaysRun = true, dependsOnMethods = "testProceedToCheckoutAndVerifyFirstNameAndLastName")
+    @Test(description = "TC-14", alwaysRun = true, dependsOnMethods = "testProceedToCheckoutAndVerifyFirstNameAndLastName")
     public static void testContinueButtonFunctionalityWithoutAddingMandatoryFields() {
         SoftAssert softAssert = new SoftAssert();
         CheckOutFirst.clearAddressOne();
@@ -76,20 +78,19 @@ public class CartTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-14", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityWithoutAddingMandatoryFields")
+    @Test(description = "TC-15", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityWithoutAddingMandatoryFields")
     public static void testContinueButtonFunctionalityAddingValidPostalCode() throws AWTException {
         SoftAssert softAssert = new SoftAssert();
         CheckOutFirst.setAddressOne();
         CheckOutFirst.setContactNumber();
         CheckOutFirst.clearPostCode();
-        CheckOutFirst.setPostalCode();
         CheckOutFirst.clickContinue();
 //        String msgFieldRequired = "This is a required field.";
 //        softAssert.assertEquals(CheckOutFirst.getPostCodeMsg(), msgFieldRequired, "IncorrectTitle");
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-15", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityAddingValidPostalCode")
+    @Test(description = "TC-16", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityAddingValidPostalCode")
     public static void testVerifyDeliveryOptions() {
         SoftAssert softAssert = new SoftAssert();
         String flateRate = "Flate Rate $15.00";
@@ -99,7 +100,7 @@ public class CartTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-16", alwaysRun = true, dependsOnMethods = "testVerifyDeliveryOptions")
+    @Test(description = "TC-17", alwaysRun = true, dependsOnMethods = "testVerifyDeliveryOptions")
     public static void testUserIsAbleToProceedWithEmptyCreditCardAndCCVOptions() {
         SoftAssert softAssert = new SoftAssert();
         CheckOutFirst.clickRdbCreditCard();
@@ -109,7 +110,7 @@ public class CartTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-17", alwaysRun = true, dependsOnMethods = "testUserIsAbleToProceedWithEmptyCreditCardAndCCVOptions")
+    @Test(description = "TC-18", alwaysRun = true, dependsOnMethods = "testUserIsAbleToProceedWithEmptyCreditCardAndCCVOptions")
     public static void testUserIsAbleToProceedWithInvalidCreditCardNumber() {
         SoftAssert softAssert = new SoftAssert();
         CheckOutFirst.clickRdbCreditCard();
@@ -122,6 +123,10 @@ public class CartTest extends TestBase {
         String invalidCreditCardNumberMessage = "Credit card type is not allowed for this payment method.";
         softAssert.assertEquals(CheckOutFirst.getInvalidCreditCardNumberMessage(), invalidCreditCardNumberMessage, "Message is not correct");
         softAssert.assertAll();
+    }
+    @AfterClass
+    public void quitDriver() {
+        CheckOutFirst.quitDriver();
     }
 
 

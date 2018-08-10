@@ -10,10 +10,10 @@ public class MyAccountPage extends CustomerLoginPage{
     private By lblMyBundyAccount =By.xpath("//h1[text()='My Bundy Account']");
     private By msgeWelcome=By.xpath("//div[@class='welcome-msg']/h2");
     private By lblUsername=By.xpath("//p[contains(text(),'william')]");
-    private By lnkCartQuantity =By.xpath("//div[@class='block-title']//span[2]");
+    private By lnkCartQuantity =By.xpath("//ul[@id='quick-access-list']/li[2]/ul/li[3]/div/div[1]/span[2]");
     //private By btnRemoveFirst=By.xpath("//a[@class='btn-remove'][1]");
     private By drpDwnProducts =By.xpath("//a[contains(text(),'Products')]");
-    private By lnkGifts =By.xpath("//*[@id=\"nav-wrapper\"]/div/div[4]/div[1]/div[2]/ul/li[2]/a");
+    private By lnkGifts =By.xpath("//div[@id='nav-wrapper']/div/div[4]/div[1]/div[2]/ul/li[2]/a");
     private By lnkLogout =By.xpath("//a[@title='Logout']");
     private By lnkMyAccount=By.xpath("//a[@title='My Account']");
 
@@ -44,18 +44,6 @@ public class MyAccountPage extends CustomerLoginPage{
         return cartQuantity;
     }
 
-    public void clickQuantity() {
-        if (getCartQuantity() > 0) {
-            bunderbergUI.click(lnkCartQuantity);
-        }
-    }
-    public void clickRemoveButton(){
-//        for (int i=1;i<=getCartQuantity();i++){
-//            bunderbergUI.click(btnRemoveFirst);
-//            bunderbergUI.clickOkInWindowsAlert();
-//
-//        }
-    }
     public void clickGifts(){
         bunderbergUI.mouseHover(drpDwnProducts);
         bunderbergUI.click(lnkGifts);
@@ -87,7 +75,6 @@ public class MyAccountPage extends CustomerLoginPage{
 
     public void countAndClickRemoveButton() throws AWTException {
         System.out.print(bunderbergUI.findElements(lnkRemove).size());
-
         bunderbergUI.click(lnkFirstRemove);
         bunderbergUI.sleep(5);
 
@@ -97,6 +84,10 @@ public class MyAccountPage extends CustomerLoginPage{
         bunderbergUI.sleep(5);
         clickCart();
         clearCart();
+    }
+    public static void quitDriver() {
+        if (bunderbergUI.driver != null)
+            bunderbergUI.quit();
     }
 
 }

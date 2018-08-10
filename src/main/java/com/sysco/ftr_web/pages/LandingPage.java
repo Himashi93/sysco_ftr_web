@@ -1,6 +1,5 @@
 package com.sysco.ftr_web.pages;
 
-import com.sysco.ftr_web.common.Constants;
 import com.sysco.ftr_web.utils.DateUtils;
 import com.syscolab.qe.core.ui.SyscoLabUI;
 import com.syscolab.qe.core.ui.web.SyscoLabWUI;
@@ -11,18 +10,18 @@ public class LandingPage {
 
     protected static SyscoLabUI bunderbergUI;
     private static By lblBirthdate = By.xpath("//span[text()='Enter your birthdate:']");
-    private By drpDay = By.id("age_select_day");
-    private By drpMonth = By.id("age_select_day");
-    private By drpYear = By.id("age_select_day");
-    private By drpFirstDay = By.xpath("//option[text()='1']");
-    private By drpJanuaryMonth = By.xpath("//option[text()='January']");
-    private By drpTwoThousandThreeYear = By.xpath("//option[text()='2003']");
-    private By drpNineteenNinetyThreeYear = By.xpath("//option[text()='1993']");
+    private By drpDwnDay = By.id("age_select_day");
+    private By drpDwnMonth = By.id("age_select_day");
+    private By drpDwnYear = By.id("age_select_day");
+    private By drpDwnFirstDay = By.xpath("//option[text()='1']");
+    private By drpDwnJanuaryMonth = By.xpath("//option[text()='January']");
+    private By drpDwnTwoThousandThreeYear = By.xpath("//option[text()='2003']");
+    private By drpDwnNineteenNinetyThreeYear = By.xpath("//option[text()='1993']");
     private By chkRememberMe = By.xpath("//span[@class='langable age_remember_me_basic']");
     private By btnEnter = By.id("age_confirm_btn");
     private By lblMessage=By.xpath("//span[contains(text(),'Sorry, your age')]");
     private By lnkMyAccount=By.xpath("//a[@title='My Account']");
-    private By msgBirthDate=By.xpath("//span[text()='Please enter your date of birth']");
+    private By msgBirthDate=By.xpath("//span[@data-lang='missing_fields']");
 
 
 
@@ -32,53 +31,32 @@ public class LandingPage {
         bunderbergUI.driver.manage().window().maximize();
     }
 
-/*
-    public static void loadLandingPage(Capabilities capabilities) {
-        if (Constants.BROWSER_TYPE.equals(Constants.BROWSER_FIREFOX) )
-            bunderbergUI = new SyscoLabWUI(capabilities, "FIREFOX");
-        else
-            bunderbergUI = new SyscoLabWUI(capabilities, "CHROME");
-        bunderbergUI.navigateTo(Constants.APP_URL);
-        bunderbergUI.driver.manage().window().maximize();
-        bunderbergUI.waitTillElementLoaded(lblBirthdate);
-    }
-*/
-
-
-/*    public static void loadLandingPage(SyscoLabUI syscoLabUI, String url) {
-        LandingPage.bunderbergUI = syscoLabUI;
-        bunderbergUI.navigateTo(Constants.BUNDABERGRUM_URL);
-        bunderbergUI.driver.manage().window().maximize();
-        bunderbergUI.waitTillElementLoaded(lblBirthdate);
-
-    }*/
-
     public void clickDrpDay() {
-        bunderbergUI.click(drpDay);
+        bunderbergUI.click(drpDwnDay);
     }
 
     public void clickDrpMonth() {
-        bunderbergUI.click(drpMonth);
+        bunderbergUI.click(drpDwnMonth);
     }
 
     public void clickDrpYear() {
-        bunderbergUI.click(drpYear);
+        bunderbergUI.click(drpDwnYear);
     }
 
     public void clickFirstDay() {
-        bunderbergUI.click(drpFirstDay);
+        bunderbergUI.click(drpDwnFirstDay);
     }
 
     public void clickMonthJanuary() {
-        bunderbergUI.click(drpJanuaryMonth);
+        bunderbergUI.click(drpDwnJanuaryMonth);
     }
 
     public void clickYearTwoThousandThree() {
-        bunderbergUI.click(drpTwoThousandThreeYear);
+        bunderbergUI.click(drpDwnTwoThousandThreeYear);
     }
 
     public void clickYearNineteenNinetyThree() {
-        bunderbergUI.click(drpNineteenNinetyThreeYear);
+        bunderbergUI.click(drpDwnNineteenNinetyThreeYear);
     }
 
     public void clickChkRememberMe() {
@@ -111,7 +89,11 @@ public class LandingPage {
     }
 
     public String getMsgBirthDtae(){
-        return bunderbergUI.getText(lblBirthdate)
+        return bunderbergUI.getText(msgBirthDate);
+    }
+    public static void quitDriver() {
+        if (bunderbergUI.driver != null)
+            bunderbergUI.quit();
     }
 
 

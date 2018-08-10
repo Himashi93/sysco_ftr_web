@@ -20,4 +20,8 @@ public class GiftsPage extends CustomerLoginPage {
         bunderbergUI.sleep(5);
 
     }
+    public static void quitDriver() {
+        if (bunderbergUI.driver != null)
+            bunderbergUI.quit();
+    }
 }

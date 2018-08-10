@@ -25,9 +25,7 @@ public class MyAccount {
     public static void clickCart(){
         myAccountPage.clickCart();
     }
-    public static void clickRemove(){
-        myAccountPage.clickRemoveButton();
-    }
+
 
     public static void clickGifts(){
         myAccountPage.clickGifts();
@@ -48,6 +46,9 @@ public class MyAccount {
     public static void clearCart() throws AWTException {
         myAccountPage.clearCart();
 
+    }
+    public static void quitDriver(){
+        myAccountPage.quitDriver();
     }
 
 }

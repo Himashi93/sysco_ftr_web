@@ -1,0 +1,6 @@
+com/sysco/ftr_web/utils/TestBase.class
+com/sysco/ftr_web/tests/GiftsTest.class
+com/sysco/ftr_web/tests/LandingTest.class
+com/sysco/ftr_web/tests/CartTest.class
+com/sysco/ftr_web/tests/MyAccountTest.class
+com/sysco/ftr_web/tests/CustomerLoginTest.class

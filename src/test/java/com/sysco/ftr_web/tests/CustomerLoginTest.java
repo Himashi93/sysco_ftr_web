@@ -7,6 +7,7 @@ import com.sysco.ftr_web.utils.TestBase;
 import com.syscolab.qe.core.reporting.SyscoLabListener;
 import com.syscolab.qe.core.reporting.SyscoLabQCenter;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -18,8 +19,9 @@ import java.io.UnsupportedEncodingException;
 public class CustomerLoginTest extends TestBase {
     @BeforeClass
     public void init(ITestContext iTestContext)  {
-        iTestContext.setAttribute("feature", "CustomerLogin");
-        syscoLabQCenter.setClassName(this.getClass().getName());
+        syscoLabQCenter.setModule("report_himashi");
+        syscoLabQCenter.setFeature("Bundabergrum - Checkout");
+        syscoLabQCenter.setClassName(CustomerLoginTest.class.getName());
         Landing.loadLandingPage();
         Landing.clickDrpDay();
         Landing.clickFirstDate();
@@ -34,7 +36,7 @@ public class CustomerLoginTest extends TestBase {
         //MyAccount.waitTillMyAccountPageLoaded();
     }
 
-    @Test(description = "TC-3", alwaysRun = true,groups = DONT_QUIT_BROWSER)
+    @Test(description = "TC-5", alwaysRun = true)
     public static void testVerifyUIComponentsOfCustomerLoginPage()  {
         //CustomerLogin.waitTillCustomerLoginPageLoaded();
         SoftAssert softAssert = new SoftAssert();
@@ -46,7 +48,7 @@ public class CustomerLoginTest extends TestBase {
 
     }
 
-    @Test(description = "TC-4", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER},dependsOnMethods = "testVerifyUIComponentsOfCustomerLoginPage")
+    @Test(description = "TC-6", alwaysRun = true,dependsOnMethods = "testVerifyUIComponentsOfCustomerLoginPage")
     public static void testVerifyUserCanLoginUsingValidCredentials() {
 
         CustomerLogin.waitTillCustomerLoginPageLoaded();
@@ -60,7 +62,7 @@ public class CustomerLoginTest extends TestBase {
 
     }
 
-    @Test(description = "TC-5", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER},dependsOnMethods = "testVerifyUserCanLoginUsingValidCredentials")
+    @Test(description = "TC-7", alwaysRun = true,dependsOnMethods = "testVerifyUserCanLoginUsingValidCredentials")
     public static void testUserLoginUsingInvalidEmail() {
         SoftAssert softAssert = new SoftAssert();
         CustomerLogin.waitTillCustomerLoginPageLoaded();
@@ -71,7 +73,7 @@ public class CustomerLoginTest extends TestBase {
 
     }
 
-    @Test(description = "TC-6", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER}, dependsOnMethods = "testUserLoginUsingInvalidEmail")
+    @Test(description = "TC-8", alwaysRun = true, dependsOnMethods = "testUserLoginUsingInvalidEmail")
     public static void testUserLoginUsingInvalidPassword() {
         SoftAssert softAssert = new SoftAssert();
         CustomerLogin.waitTillCustomerLoginPageLoaded();
@@ -82,7 +84,7 @@ public class CustomerLoginTest extends TestBase {
 
     }
 
-    @Test(description = "TC-7", alwaysRun = true, groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER}, dependsOnMethods = "testUserLoginUsingInvalidPassword")
+    @Test(description = "TC-9", alwaysRun = true, dependsOnMethods = "testUserLoginUsingInvalidPassword")
     public static void testUserLoginUsingEmptyCredentials() {
         SoftAssert softAssert = new SoftAssert();
         //CustomerLogin.waitTillCustomerLoginPageLoaded();
@@ -92,6 +94,11 @@ public class CustomerLoginTest extends TestBase {
         softAssert.assertEquals(CustomerLogin.getPasswordRequiredMessage(), msgeRequiredField, "Invalid message");
         softAssert.assertAll();
 
+    }
+
+    @AfterClass
+    public void quitDriver(){
+        CustomerLogin.quiteDriver();
     }
 
 

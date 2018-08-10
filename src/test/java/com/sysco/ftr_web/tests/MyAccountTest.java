@@ -8,6 +8,7 @@ import com.sysco.ftr_web.functions.MyAccount;
 import com.sysco.ftr_web.utils.TestBase;
 import com.syscolab.qe.core.reporting.SyscoLabListener;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -20,7 +21,8 @@ import java.io.UnsupportedEncodingException;
 public class MyAccountTest extends TestBase {
     @BeforeClass
     public void init(ITestContext iTestContext) {
-        iTestContext.setAttribute("feature", "MyAccount");
+        syscoLabQCenter.setModule("report_himashi");
+        syscoLabQCenter.setFeature("Bundabergrum - Checkout");
         syscoLabQCenter.setClassName(MyAccountTest.class.getName());
         Landing.loadLandingPage();
         Landing.clickDrpDay();
@@ -38,7 +40,7 @@ public class MyAccountTest extends TestBase {
         MyAccount.waitTillMyAccountPageLoaded();
     }
 
-    @Test(description = "TC-8", alwaysRun = true,groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER})
+    @Test(description = "TC-10", alwaysRun = true)
     public static void testCorrectUserNameIsDisplayed() {
 
         SoftAssert softAssert = new SoftAssert();
@@ -47,13 +49,17 @@ public class MyAccountTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-9", alwaysRun = true,groups = {USE_CURRENT_BROWSER, DONT_QUIT_BROWSER},dependsOnMethods = "testCorrectUserNameIsDisplayed")
+    @Test(description = "TC-11",dependsOnMethods = "testCorrectUserNameIsDisplayed")
     public static void testRemoveCartItemsIfExist() throws AWTException {
         SoftAssert softAssert=new SoftAssert();
         MyAccount.clickCart();
         MyAccount.clearCart();
         softAssert.assertEquals(MyAccount.getCartQuantityAsString(),"0","Cart quantity not equal to 0");
         softAssert.assertAll();
+    }
+    @AfterClass
+    public static void quitDriver(){
+        MyAccount.quitDriver();
     }
 
 }

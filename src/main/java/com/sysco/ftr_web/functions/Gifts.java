@@ -12,4 +12,8 @@ public class Gifts {
         giftsPage.clickCanCooler();
     }
 
+    public static void quitDriver(){
+       giftsPage.quitDriver();
+    }
+
 }

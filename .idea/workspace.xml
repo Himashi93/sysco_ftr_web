@@ -5,37 +5,27 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/common/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CustomerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CustomerLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Gifts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Gifts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Landing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Landing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/MyAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CanCoolerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CanCoolerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CustomerLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/GiftsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/GiftsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/LandingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/MyAccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CustomerLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CustomerLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/GiftsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/GiftsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/Landingtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/Landingtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/Landingtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/LandingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/MyAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/MyAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/utils/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/utils/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chrome_driver/amd64/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chrome_driver/amd64/chromedriver" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/common/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/common/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/CanCooler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/CanCooler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/CustomerLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/CustomerLogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/Landing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/Landing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/MyAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/functions/MyAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/CanCoolerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/CanCoolerPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/CustomerLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/CustomerLoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/GiftsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/GiftsPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/LandingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/LandingPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/pages/MyAccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/utils/DriverSetUpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sysco/ftr_web/utils/DriverSetUpUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/syscolabs/assignment/qe/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/CartTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/CartTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/CustomerLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/CustomerLoginTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/GiftsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/GiftsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/Landingtest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/Landingtest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/Landingtest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/MyAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/tests/MyAccountTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/utils/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sysco/ftr_web/utils/TestBase.class" afterDir="false" />
     </list>
@@ -49,43 +39,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CartTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CartTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="329">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/utils/TestBase.java">
+      <file leaf-file-name="CheckOutFirstPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/common/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="22" column="94" lean-forward="true" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LandingPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/LandingPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+            <state relative-caret-position="113">
+              <caret line="20" column="93" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="93" />
               <folding>
-                <element signature="e#3055#3056#0" expanded="true" />
-                <element signature="e#3110#3111#0" expanded="true" />
-                <element signature="e#3610#3611#0" expanded="true" />
-                <element signature="e#3644#3645#0" expanded="true" />
+                <element signature="e#3318#3319#0" expanded="true" />
+                <element signature="e#3375#3376#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GiftsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/GiftsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+              <folding>
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#1650#1651#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LandingTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/LandingTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1030">
+              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3691#3692#0" expanded="true" />
+                <element signature="e#3713#3714#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAccountTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/MyAccountTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+              <folding>
+                <element signature="e#2304#2305#0" expanded="true" />
+                <element signature="e#2328#2329#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,92 +104,26 @@
       <file leaf-file-name="CheckOutFirst.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+            <state relative-caret-position="166">
+              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#1160#1161#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-                <element signature="e#2432#2433#0" expanded="true" />
-                <element signature="e#2464#2465#0" expanded="true" />
-                <element signature="e#2517#2518#0" expanded="true" />
-                <element signature="e#2566#2567#0" expanded="true" />
+                <element signature="e#1520#1521#0" expanded="true" />
+                <element signature="e#1585#1586#0" expanded="true" />
+                <element signature="e#2525#2526#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#2614#2615#0" expanded="true" />
+                <element signature="e#2660#2661#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckOutFirstPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java">
+      <file leaf-file-name="CustomerLoginTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CustomerLoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="30" column="95" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
-              <folding>
-                <element signature="e#1778#1779#0" expanded="true" />
-                <element signature="e#1827#1828#0" expanded="true" />
-                <element signature="e#1866#1867#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
-                <element signature="e#2747#2748#0" expanded="true" />
-                <element signature="e#2804#2805#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Landingtest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/Landingtest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/MyAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyAccountPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/MyAccountPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CartPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CartPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="-805">
+              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -203,11 +147,12 @@
       <find>feature</find>
       <find>mousehover</find>
       <find>clear</find>
-      <find>browser</find>
       <find>protected</find>
       <find>compil</find>
       <find>//a[contains(text(),'Products')]</find>
       <find>//div[@class='block-title']//span[2]</find>
+      <find>browser</find>
+      <find>quit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,25 +187,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutSecond.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutSecondPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/utils/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Landing.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CustomerLoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CustomerLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CustomerLoginTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/MyAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CanCoolerPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CartPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/GiftsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/Landingtest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/utils/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CustomerLoginTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Gifts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/MyAccountPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/MyAccount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/GiftsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/LandingPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Landing.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/LandingTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/common/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/MyAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/GiftsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/MyAccountPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CartTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/common/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/LandingPage.java" />
       </list>
     </option>
   </component>
@@ -278,10 +224,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1535" />
-    <option name="height" value="904" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -289,6 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -421,40 +368,18 @@
               <item name="ftr_web" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sysco_ftr_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="sysco_ftr_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.syscolab.qe:qe-core:0.2.3" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="sysco_ftr_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.syscolab.qe:qe-core:0.2.3" type="70bed36:NamedLibraryElementNode" />
-              <item name="qe-core-0.2.3.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sysco_ftr_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.syscolab.qe:qe-core:0.2.3" type="70bed36:NamedLibraryElementNode" />
-              <item name="qe-core-0.2.3.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="constant&#9;FILE&#9;file:///home/himashis/Downloads/sysco_ftr_web/src/main/java/com/sysco/ftr_web/common/Constants.java" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment01 (2)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -484,7 +409,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Landingtest">
+  <component name="RunManager" selected="TestNG.CartTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -507,7 +432,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CartTest (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="assignment" />
       <extension name="coverage">
         <pattern>
@@ -536,7 +461,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="CartTest (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="assignment" />
       <extension name="coverage">
         <pattern>
@@ -565,7 +490,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="CartTest (4)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerLoginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="assignment" />
       <extension name="coverage">
         <pattern>
@@ -577,7 +502,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.sysco.ftr_web.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.sysco.ftr_web.tests.CartTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sysco.ftr_web.tests.CustomerLoginTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -594,7 +519,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="CartTest (5)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GiftsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="assignment" />
       <extension name="coverage">
         <pattern>
@@ -606,7 +531,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.sysco.ftr_web.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.sysco.ftr_web.tests.CartTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sysco.ftr_web.tests.GiftsTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -623,7 +548,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Landingtest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LandingTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="assignment" />
       <extension name="coverage">
         <pattern>
@@ -635,7 +560,36 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.sysco.ftr_web.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.sysco.ftr_web.tests.Landingtest" />
+      <option name="MAIN_CLASS_NAME" value="com.sysco.ftr_web.tests.LandingTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="MyAccountTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sysco.ftr_web.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.sysco.ftr_web.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.sysco.ftr_web.tests.MyAccountTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -675,19 +629,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.CartTest (2)" />
-      <item itemvalue="TestNG.CartTest (4)" />
-      <item itemvalue="TestNG.CartTest (1)" />
-      <item itemvalue="TestNG.CartTest (5)" />
-      <item itemvalue="TestNG.Landingtest" />
+      <item itemvalue="TestNG.LandingTest" />
+      <item itemvalue="TestNG.CustomerLoginTest" />
+      <item itemvalue="TestNG.MyAccountTest" />
+      <item itemvalue="TestNG.GiftsTest" />
+      <item itemvalue="TestNG.CartTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Landingtest" />
-        <item itemvalue="TestNG.CartTest (5)" />
-        <item itemvalue="TestNG.CartTest (2)" />
-        <item itemvalue="TestNG.CartTest (1)" />
-        <item itemvalue="TestNG.CartTest (4)" />
+        <item itemvalue="TestNG.CartTest" />
+        <item itemvalue="TestNG.GiftsTest" />
+        <item itemvalue="TestNG.MyAccountTest" />
+        <item itemvalue="TestNG.CustomerLoginTest" />
+        <item itemvalue="TestNG.LandingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -705,35 +659,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartTest_(3) - 2018.08.10 at 10h 22m 17s.xml">
-      <configuration name="CartTest (3)" configurationId="TestNG" />
+    <history-entry file="GiftsTest - 2018.08.10 at 22h 50m 44s.xml">
+      <configuration name="GiftsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CartTest - 2018.08.10 at 10h 28m 34s.xml">
+    <history-entry file="MyAccountTest_(1) - 2018.08.10 at 22h 52m 32s.xml">
+      <configuration name="MyAccountTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyAccountTest_(1) - 2018.08.10 at 22h 56m 20s.xml">
+      <configuration name="MyAccountTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyAccountTest_(1) - 2018.08.10 at 22h 59m 07s.xml">
+      <configuration name="MyAccountTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LandingTest_(1) - 2018.08.10 at 23h 19m 49s.xml">
+      <configuration name="LandingTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LandingTest - 2018.08.10 at 23h 29m 02s.xml">
+      <configuration name="LandingTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CustomerLoginTest - 2018.08.10 at 23h 32m 13s.xml">
+      <configuration name="CustomerLoginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyAccountTest - 2018.08.10 at 23h 35m 25s.xml">
+      <configuration name="MyAccountTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GiftsTest - 2018.08.10 at 23h 41m 09s.xml">
+      <configuration name="GiftsTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CartTest - 2018.08.10 at 23h 46m 32s.xml">
       <configuration name="CartTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CartTest - 2018.08.10 at 12h 01m 01s.xml">
-      <configuration name="CartTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CartTest_(4) - 2018.08.10 at 12h 14m 48s.xml">
-      <configuration name="CartTest (4)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CartTest_(1) - 2018.08.10 at 12h 19m 57s.xml">
-      <configuration name="CartTest (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CartTest_(2) - 2018.08.10 at 12h 29m 23s.xml">
-      <configuration name="CartTest (2)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CartTest_(2) - 2018.08.10 at 13h 44m 24s.xml">
-      <configuration name="CartTest (2)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CartTest_(2) - 2018.08.10 at 13h 51m 18s.xml">
-      <configuration name="CartTest (2)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CartTest_(5) - 2018.08.10 at 14h 04m 59s.xml">
-      <configuration name="CartTest (5)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Landingtest - 2018.08.10 at 15h 01m 04s.xml">
-      <configuration name="Landingtest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -746,9 +700,9 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.0" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49029756" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4851229" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32988358" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -758,8 +712,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.0080591" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39974126" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -769,31 +723,31 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32988358" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37676293" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29754204" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.0080591" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33445266" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41009057" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32988358" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974126" />
       <window_info id="Archetypes" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32988358" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974126" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32988358" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.010745467" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.0" />
       <window_info id="Favorites" order="7" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -802,7 +756,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="60" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="63" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -811,6 +779,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>bunderbergUI.click(drpDwnFirstTwoHundred)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>CheckOutFirst.setPostalCode()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>Gifts.clickCanCooler()</expression-string>
         <language-id>JAVA</language-id>
@@ -846,35 +824,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>txtEmail</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>element</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/syscolabs/assignment/qe/common/Constants.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/syscolabs/assignment/qe/utils/TestBase.java" />
-    <entry file="file://$PROJECT_DIR$/webUI.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/DataProvider/LoginData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/LoginTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/syscolab/qe/qe-core/0.2.3/qe-core-0.2.3.jar!/com/syscolab/qe/core/ui/SyscoLabCapabilityUtil.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -999,13 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Landing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1020,31 +965,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Cart.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="134">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CustomerLoginPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/syscolab/qe/qe-core/0.2.3/qe-core-0.2.3.jar!/com/syscolab/qe/core/ui/web/SyscoLabWUI.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/syscolab/qe/qe-core/0.2.3/qe-core-0.2.3.jar!/com/syscolab/qe/core/ui/SyscoLabUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5499">
-          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/regression.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CanCooler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/regression.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/utils/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="-142">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1061,86 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CustomerLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Gifts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/GiftsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CustomerLoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/MyAccountTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/GiftsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/common/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="22" column="94" lean-forward="true" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/MyAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CartPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1148,89 +1012,233 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CustomerLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="95" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
+        <state relative-caret-position="285">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
-            <element signature="e#1778#1779#0" expanded="true" />
-            <element signature="e#1827#1828#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-            <element signature="e#2747#2748#0" expanded="true" />
-            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CartTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Cart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CanCooler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Gifts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/syscolab/qe/qe-core/0.2.3/qe-core-0.2.3.jar!/com/syscolab/qe/core/ui/SyscoLabUI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+          <folding>
+            <element signature="e#2744#2745#0" expanded="true" />
+            <element signature="e#2795#2796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.4.0/selenium-remote-driver-3.4.0-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="396" column="26" selection-start-line="396" selection-start-column="26" selection-end-line="396" selection-end-column="26" />
+          <folding>
+            <element signature="e#14242#14243#0" expanded="true" />
+            <element signature="e#14280#14281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CustomerLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="57" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/MyAccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="398">
+          <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/MyAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+        <state relative-caret-position="402">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2517#2518#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/Landingtest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/GiftsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="315">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/Landing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
+            <element signature="e#1962#1963#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/LandingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+        <state relative-caret-position="653">
+          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
           <folding>
-            <element signature="e#3055#3056#0" expanded="true" />
-            <element signature="e#3110#3111#0" expanded="true" />
-            <element signature="e#3610#3611#0" expanded="true" />
-            <element signature="e#3644#3645#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/utils/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/common/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="345">
+          <caret line="23" column="113" selection-start-line="23" selection-start-column="113" selection-end-line="23" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/pages/CheckOutFirstPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="20" column="93" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="93" />
+          <folding>
+            <element signature="e#3318#3319#0" expanded="true" />
+            <element signature="e#3375#3376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysco/ftr_web/functions/CheckOutFirst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#2525#2526#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2614#2615#0" expanded="true" />
+            <element signature="e#2660#2661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/LandingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1030">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3691#3692#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CustomerLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/MyAccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#2304#2305#0" expanded="true" />
+            <element signature="e#2328#2329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/GiftsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding>
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysco/ftr_web/tests/CartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
         </state>
       </provider>
     </entry>

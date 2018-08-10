@@ -81,5 +81,8 @@ public class CheckOutFirst  {
     public static void setContactNumber(){
         checkOutFirstPage.setContactNumber();
     }
+    public static void quitDriver(){
+        checkOutFirstPage.quitDriver();
+    }
 
 }

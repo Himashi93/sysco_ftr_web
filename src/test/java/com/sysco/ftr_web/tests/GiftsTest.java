@@ -5,6 +5,7 @@ import com.sysco.ftr_web.functions.*;
 import com.sysco.ftr_web.utils.TestBase;
 import com.syscolab.qe.core.reporting.SyscoLabListener;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -16,7 +17,8 @@ import java.io.UnsupportedEncodingException;
 public class GiftsTest extends TestBase {
     @BeforeClass
     public void init(ITestContext iTestContext) throws UnsupportedEncodingException {
-        iTestContext.setAttribute("feature", "Products");
+        syscoLabQCenter.setModule("report_himashi");
+        syscoLabQCenter.setFeature("Bundabergrum - Checkout");
         syscoLabQCenter.setClassName(GiftsTest.class.getName());
         Landing.loadLandingPage();
         Landing.clickDrpDay();
@@ -33,7 +35,7 @@ public class GiftsTest extends TestBase {
         // MyAccount.waitTillMyAccountPageLoaded();
     }
 
-    @Test(description = "TC-10", alwaysRun = true)
+    @Test(description = "TC-13", alwaysRun = true)
     public static void testSelectProductAndAddToCart() {
 
         MyAccount.clickGifts();
@@ -41,6 +43,10 @@ public class GiftsTest extends TestBase {
         Gifts.clickCanCooler();
         CanCooler.clickAddToCart();
 
+    }
+    @AfterClass
+    public static void quitDriver(){
+        Gifts.quitDriver();
     }
 
 

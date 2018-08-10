@@ -4,6 +4,9 @@ import com.sysco.ftr_web.common.Constants;
 import com.syscolab.qe.core.reporting.SyscoLabListener;
 import com.syscolab.qe.core.reporting.SyscoLabQCenter;
 import com.syscolab.qe.core.reporting.SyscoLabReporting;
+import com.syscolab.qe.core.ui.SyscoLabUI;
+import com.syscolab.qe.core.ui.mobile.SyscoLabMUI;
+import com.syscolab.qe.core.ui.web.SyscoLabWUI;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -36,7 +39,8 @@ public class TestBase {
         syscoLabQCenter.setRelease(Constants.TEST_RELEASE);
         syscoLabQCenter.setClassName(this.getClass().getName());
     }
-    @AfterClass (alwaysRun = true)
+
+    @AfterClass(alwaysRun = true)
     public void cleanUp(ITestContext iTestContext) {
         try {
             if (Constants.UPDATE_DASHBOARD)
@@ -47,7 +51,6 @@ public class TestBase {
         }
 
     }
-
 
 
     @BeforeTest
@@ -55,27 +58,11 @@ public class TestBase {
         System.out.println("Test Running " + this.getClass().toString());
     }
 
-   /* @AfterClass(alwaysRun = true)
-    public void cleanUp(ITestContext iTestContext) {
-        try {
-            syscoLabQCenter.setProjectName(Constants.TEST_PROJECT);
-            syscoLabQCenter.setEnvironment(Constants.TEST_ENV);
 
-            syscoLabQCenter.setRelease(Constants.TEST_RELEASE);
-            syscoLabQCenter.setModule(iTestContext.getAttribute("Bundabergrum").toString());
-            syscoLabQCenter.setFeature(iTestContext.getAttribute("Checkout").toString());
-            syscoLabQCenter.setClassName(iTestContext.getClass().getName());
-
-            if (Constants.UPDATE_DASHBOARD)
-                SyscoLabReporting.generateJsonFile(SyscoLabListener.getResults(), syscoLabQCenter);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }*/
+}
 
 
-    }
+
 
 
 
