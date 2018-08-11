@@ -1,6 +1,6 @@
 package com.sysco.ftr_web.pages;
 
-import com.sysco.ftr_web.utils.DateUtils;
+
 import com.syscolab.qe.core.ui.SyscoLabUI;
 import com.syscolab.qe.core.ui.web.SyscoLabWUI;
 import org.openqa.selenium.By;
@@ -9,7 +9,6 @@ import org.openqa.selenium.Capabilities;
 public class LandingPage {
 
     protected static SyscoLabUI bunderbergUI;
-    private static By lblBirthdate = By.xpath("//span[text()='Enter your birthdate:']");
     private By drpDwnDay = By.id("age_select_day");
     private By drpDwnMonth = By.id("age_select_day");
     private By drpDwnYear = By.id("age_select_day");
@@ -19,10 +18,9 @@ public class LandingPage {
     private By drpDwnNineteenNinetyThreeYear = By.xpath("//option[text()='1993']");
     private By chkRememberMe = By.xpath("//span[@class='langable age_remember_me_basic']");
     private By btnEnter = By.id("age_confirm_btn");
-    private By lblMessage=By.xpath("//span[contains(text(),'Sorry, your age')]");
-    private By lnkMyAccount=By.xpath("//a[@title='My Account']");
-    private By msgBirthDate=By.xpath("//span[@data-lang='missing_fields']");
-
+    private By lblMessage = By.xpath("//span[contains(text(),'Sorry, your age')]");
+    private By lnkMyAccount = By.xpath("//a[@title='My Account']");
+    private By msgBirthDate = By.xpath("//span[@data-lang='missing_fields']");
 
 
     public static void loadLoginPage(Capabilities capabilities, String url) {
@@ -63,34 +61,29 @@ public class LandingPage {
         bunderbergUI.click(chkRememberMe);
     }
 
-    public void clickBtnEnter()  {
+    public void clickBtnEnter() {
         bunderbergUI.click(btnEnter);
         bunderbergUI.sleep(2);
     }
 
-    public String getMessage(){
+    public String getMessage() {
         return bunderbergUI.getText(lblMessage);
     }
 
-    public void deleteAllCookies(){
+    public void deleteAllCookies() {
         bunderbergUI.driver.manage().deleteAllCookies();
     }
 
-    public void setDateTwethyFourYearsFromTheCurrentDate(){
-        DateUtils dateUtils=new DateUtils();
-        DateUtils.getFutureDate(-1);
 
-
-
-    }
-    public void clickLnkMyAccount(){
+    public void clickLnkMyAccount() {
         bunderbergUI.click(lnkMyAccount);
         bunderbergUI.sleep(2);
     }
 
-    public String getMsgBirthDtae(){
+    public String getMsgBirthDtae() {
         return bunderbergUI.getText(msgBirthDate);
     }
+
     public static void quitDriver() {
         if (bunderbergUI.driver != null)
             bunderbergUI.quit();

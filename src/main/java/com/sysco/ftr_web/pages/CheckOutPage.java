@@ -70,10 +70,6 @@ public class CheckOutPage extends CustomerLoginPage {
         return bunderbergUI.getText(msgPostCode);
     }
 
-    public void clickBtnCloseOfPostalCode() {
-        bunderbergUI.click(btnCloseOFPostalCode);
-
-    }
 
     public void setPostalCode() throws AWTException {
 

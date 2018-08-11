@@ -18,7 +18,7 @@ import java.io.UnsupportedEncodingException;
 @Listeners(SyscoLabListener.class)
 public class CustomerLoginTest extends TestBase {
     @BeforeClass
-    public void init(ITestContext iTestContext)  {
+    public void init(ITestContext iTestContext) {
         syscoLabQCenter.setModule("report_himashi");
         syscoLabQCenter.setFeature("Bundabergrum - Checkout");
         syscoLabQCenter.setClassName(CustomerLoginTest.class.getName());
@@ -36,7 +36,7 @@ public class CustomerLoginTest extends TestBase {
     }
 
     @Test(description = "TC-6", alwaysRun = true)
-    public static void testVerifyUIComponentsOfCustomerLoginPage()  {
+    public static void testVerifyUIComponentsOfCustomerLoginPage() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(CustomerLogin.isLoginButtonEnabled(), "Login button in not enabled");
         softAssert.assertTrue(CustomerLogin.isEmailTextFieldDisplayed(), "Email text field is not visible");
@@ -45,7 +45,7 @@ public class CustomerLoginTest extends TestBase {
 
     }
 
-    @Test(description = "TC-7", alwaysRun = true,dependsOnMethods = "testVerifyUIComponentsOfCustomerLoginPage")
+    @Test(description = "TC-7", alwaysRun = true, dependsOnMethods = "testVerifyUIComponentsOfCustomerLoginPage")
     public static void testVerifyUserCanLoginUsingValidCredentials() {
         CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.loginUsingValidCredentials();
@@ -58,7 +58,7 @@ public class CustomerLoginTest extends TestBase {
 
     }
 
-    @Test(description = "TC-8", alwaysRun = true,dependsOnMethods = "testVerifyUserCanLoginUsingValidCredentials")
+    @Test(description = "TC-8", alwaysRun = true, dependsOnMethods = "testVerifyUserCanLoginUsingValidCredentials")
     public static void testUserLoginUsingInvalidEmail() {
         SoftAssert softAssert = new SoftAssert();
         CustomerLogin.waitTillCustomerLoginPageLoaded();
@@ -92,7 +92,7 @@ public class CustomerLoginTest extends TestBase {
     }
 
     @AfterClass
-    public void quitDriver(){
+    public void quitDriver() {
         CustomerLogin.quiteDriver();
     }
 

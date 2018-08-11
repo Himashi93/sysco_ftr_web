@@ -12,7 +12,7 @@ import java.awt.*;
 
 public class CartTest extends TestBase {
     @BeforeClass
-    public void init(ITestContext iTestContext)  {
+    public void init(ITestContext iTestContext) {
         syscoLabQCenter.setModule("report_himashi");
         syscoLabQCenter.setFeature("Bundabergrum - Checkout");
         syscoLabQCenter.setClassName(CartTest.class.getName());

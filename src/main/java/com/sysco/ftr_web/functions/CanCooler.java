@@ -4,23 +4,22 @@ import com.sysco.ftr_web.pages.CanCoolerPage;
 
 public class CanCooler {
 
-    private static CanCoolerPage canCoolerPage=new CanCoolerPage();
+    private static CanCoolerPage canCoolerPage = new CanCoolerPage();
 
-    public static void waitTillCanCoolerPageLoaded(){
-        canCoolerPage.waitTillCanCoolerPageLoaded();
-    }
-    public static void clickAddToCart(){
+
+    public static void clickAddToCart() {
         canCoolerPage.clickAddToCart();
     }
 
-    public static String getTxtCanCooler(){
+    public static String getTxtCanCooler() {
         return canCoolerPage.getCanCoolerText();
     }
-    public static String getCanCoolerPrice(){
+
+    public static String getCanCoolerPrice() {
         return canCoolerPage.getCanCoolerPrice();
     }
 
-    public static void clickCheckout(){
+    public static void clickCheckout() {
         canCoolerPage.clickBtnCheckout();
     }
 }

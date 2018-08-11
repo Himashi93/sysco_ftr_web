@@ -1,7 +1,6 @@
 package com.sysco.ftr_web.tests;
 
 
-import com.sysco.ftr_web.functions.Cart;
 import com.sysco.ftr_web.functions.CustomerLogin;
 import com.sysco.ftr_web.functions.Landing;
 import com.sysco.ftr_web.functions.MyAccount;
@@ -15,7 +14,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.awt.*;
-import java.io.UnsupportedEncodingException;
+
 
 @Listeners(SyscoLabListener.class)
 public class MyAccountTest extends TestBase {

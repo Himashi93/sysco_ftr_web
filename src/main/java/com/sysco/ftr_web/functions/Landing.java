@@ -70,10 +70,10 @@ public class Landing {
     public static String getMsgBirthDate() {
         return landingPage.getMsgBirthDtae();
     }
-    public static void quitDriver(){
+
+    public static void quitDriver() {
         landingPage.quitDriver();
     }
-
 
 
 }

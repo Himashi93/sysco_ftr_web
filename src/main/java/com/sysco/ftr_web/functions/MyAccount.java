@@ -10,36 +10,39 @@ public class MyAccount {
     private MyAccount() {
     }
 
-    public static String getMyAccountTitle() {
-        return myAccountPage.getMyAccountTittle();
 
-    }
     public static String getWelcomeMessage() {
         return myAccountPage.getWelcomeMessage();
 
     }
+
     public static String getUsernameAndEmail() {
         return myAccountPage.getUsernameAndEmail();
 
     }
-    public static void clickCart(){
+
+    public static void clickCart() {
         myAccountPage.clickCart();
     }
 
 
-    public static void clickGifts(){
+    public static void clickGifts() {
         myAccountPage.clickGifts();
     }
-    public static void waitTillMyAccountPageLoaded(){
+
+    public static void waitTillMyAccountPageLoaded() {
         myAccountPage.waitTillMyAccountPageLoaded();
     }
-    public static void clickLogout(){
+
+    public static void clickLogout() {
         myAccountPage.clickLnkLogout();
     }
-    public static void clickMyAccount(){
+
+    public static void clickMyAccount() {
         myAccountPage.clickLnkMyAccount();
     }
-    public static String getCartQuantityAsString(){
+
+    public static String getCartQuantityAsString() {
         return myAccountPage.getCartQuantityAsString();
     }
 
@@ -47,7 +50,8 @@ public class MyAccount {
         myAccountPage.clearCart();
 
     }
-    public static void quitDriver(){
+
+    public static void quitDriver() {
         myAccountPage.quitDriver();
     }
 

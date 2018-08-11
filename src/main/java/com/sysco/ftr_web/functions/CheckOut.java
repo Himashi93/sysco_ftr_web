@@ -5,96 +5,101 @@ import com.sysco.ftr_web.pages.CheckOutPage;
 import java.awt.*;
 
 public class CheckOut {
-    private static CheckOutPage checkOutPage =new CheckOutPage();
-    public static String getFirstName(){
+    private static CheckOutPage checkOutPage = new CheckOutPage();
+
+    public static String getFirstName() {
         return checkOutPage.getFirstName();
     }
-    public static String getLastName(){
+
+    public static String getLastName() {
         return checkOutPage.getLastName();
     }
 
-    public static void clearAddressOne(){
+    public static void clearAddressOne() {
         checkOutPage.clearAddressOne();
     }
 
-    public static void clearTelephone(){
+    public static void clearTelephone() {
         checkOutPage.clearContactNumber();
     }
-    public static void clearPostCode(){
+
+    public static void clearPostCode() {
         checkOutPage.clearPostCode();
     }
 
-    public static void clickDeliveryAddressContinue(){
+    public static void clickDeliveryAddressContinue() {
         checkOutPage.clickBtnDeliveryAddressContinue();
     }
-    public static String getAddressRequiredMsg(){
+
+    public static String getAddressRequiredMsg() {
         return checkOutPage.getAddressRequiredMsg();
     }
-    public static String getContactNumberRequiredMsg(){
+
+    public static String getContactNumberRequiredMsg() {
         return checkOutPage.getContactNumberRequiredMsg();
     }
 
-    public static String getPostCodeMsg(){
+    public static String getPostCodeMsg() {
         return checkOutPage.getPostCodeRequiredMsg();
     }
-    public static void clickBtnCloseOfPostalCode(){
-        checkOutPage.clickBtnCloseOfPostalCode();
-    }
+
 
     public static void setPostalCode() throws AWTException {
         checkOutPage.setPostalCode();
 
     }
-    public static String getShippingCondition(){
-        return checkOutPage.getShippingCondition();
 
 
-    }
-
-
-    public static void waitTillPaymentInforLoaded(){
+    public static void waitTillPaymentInforLoaded() {
         checkOutPage.waitTillPaymentInforLoaded();
     }
-    public static void clickRdbCreditCard(){
+
+    public static void clickRdbCreditCard() {
         checkOutPage.clickRdbCreditCard();
     }
-    public static void enterCreditCardNumber(String testCreditCardNumber){
+
+    public static void enterCreditCardNumber(String testCreditCardNumber) {
         checkOutPage.enterCreditCartNumber(testCreditCardNumber);
     }
-    public static void enterCCV(String testCCV){
+
+    public static void enterCCV(String testCCV) {
         checkOutPage.enterCCV(testCCV);
     }
-    public static void clickChkAgreement(){
+
+    public static void clickChkAgreement() {
         checkOutPage.clickChkAgreement();
     }
-    public static void clickPurchaseMyOrder(){
+
+    public static void clickPurchaseMyOrder() {
         checkOutPage.clickBtnPurchaseMyOrder();
     }
 
-    public static String getInvalidCreditCardNumberMessage(){
+    public static String getInvalidCreditCardNumberMessage() {
         return checkOutPage.getInvalidCreditCardNumberMessage();
     }
-    public static void setAddressOne(){
+
+    public static void setAddressOne() {
         checkOutPage.setAddressOne();
     }
-    public static void setContactNumber(){
+
+    public static void setContactNumber() {
         checkOutPage.setContactNumber();
     }
 
-    public static void clearCreditCardNumber(){
+    public static void clearCreditCardNumber() {
         checkOutPage.clearCreditCardNumber();
     }
 
-    public static void clickShippingMethodContinueButton(){
+    public static void clickShippingMethodContinueButton() {
         checkOutPage.clickShippingMethodContinueButton();
     }
 
 
-    public static boolean isChkShippingAuthorizedSelected(){
+    public static boolean isChkShippingAuthorizedSelected() {
         return checkOutPage.isChkShippingAuthorizedSelected();
     }
 
-    public static void quitDriver(){
+    public static void quitDriver() {
         checkOutPage.quitDriver();
     }
 

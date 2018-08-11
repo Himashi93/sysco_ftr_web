@@ -16,7 +16,7 @@ import java.io.UnsupportedEncodingException;
 @Listeners(SyscoLabListener.class)
 public class GiftsTest extends TestBase {
     @BeforeClass
-    public void init(ITestContext iTestContext) throws UnsupportedEncodingException {
+    public void init(ITestContext iTestContext) {
         syscoLabQCenter.setModule("report_himashi");
         syscoLabQCenter.setFeature("Bundabergrum - Checkout");
         syscoLabQCenter.setClassName(GiftsTest.class.getName());
@@ -29,10 +29,10 @@ public class GiftsTest extends TestBase {
         Landing.clickNineteenNinetyThreeYear();
         Landing.clickRememberMe();
         Landing.clickEnter();
-        //CustomerLogin.waitTillHomePageIsLoaded();
+
         Landing.clickMyAccount();
         CustomerLogin.loginUsingValidCredentials();
-        // MyAccount.waitTillMyAccountPageLoaded();
+
     }
 
     @Test(description = "TC-13", alwaysRun = true)

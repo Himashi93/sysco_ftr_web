@@ -43,7 +43,6 @@ public class LandingTest extends TestBase {
 
     @Test(description = "TC-2", dependsOnMethods = "testMessageIsDisplayedForAgeLessThanTwentyFourYears")
     public static void testUserIsNavigatedToLoginPageWithoutEnteringTheYear() {
-
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpDay();
         Landing.clickFirstDate();
@@ -59,7 +58,6 @@ public class LandingTest extends TestBase {
 
     @Test(description = "TC-3", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheYear")
     public static void testUserIsNavigatedToLoginPageWithoutEnteringTheMonth() {
-
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpDay();
         Landing.clickFirstDate();
@@ -75,7 +73,6 @@ public class LandingTest extends TestBase {
 
     @Test(description = "TC-4", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheYear")
     public static void testUserIsNavigatedToLoginPageWithoutEnteringTheDate() {
-
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpMonth();
         Landing.clickJanuaryMonth();
@@ -91,7 +88,6 @@ public class LandingTest extends TestBase {
 
     @Test(description = "TC-5", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheMonth")
     public static void testUserIsNavigatedToLoginPageWhenTheAgeIsGreaterThanTwentyFourYears() {
-
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpDay();
         Landing.clickFirstDate();
