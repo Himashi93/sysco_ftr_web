@@ -20,9 +20,7 @@ import java.awt.*;
 public class MyAccountTest extends TestBase {
     @BeforeClass
     public void init(ITestContext iTestContext) {
-        syscoLabQCenter.setModule("report_himashi");
-        syscoLabQCenter.setFeature("Bundabergrum - Checkout");
-        syscoLabQCenter.setClassName(MyAccountTest.class.getName());
+
         Landing.loadLandingPage();
         Landing.clickDrpDay();
         Landing.clickFirstDate();
