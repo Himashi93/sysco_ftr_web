@@ -72,7 +72,23 @@ public class LandingTest extends TestBase {
         Landing.deleteAllCookies();
     }
 
-    @Test(description = "TC-4", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheMonth")
+    @Test(description = "TC-4", alwaysRun = true,dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheYear")
+    public static void testUserIsNavigatedToLoginPageWithoutEnteringTheDate()  {
+
+        SoftAssert softAssert = new SoftAssert();
+        Landing.clickDrpMonth();
+        Landing.clickJanuaryMonth();
+        Landing.clickDrpYear();
+        Landing.clickTwoThousandThreeYear();
+        Landing.clickRememberMe();
+        Landing.clickEnter();
+        String message = "Please enter your date of birth";
+        softAssert.assertEquals(Landing.getMsgBirthDate(), message, "Incorrect Message");
+        softAssert.assertAll();
+        Landing.deleteAllCookies();
+    }
+
+    @Test(description = "TC-5", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheMonth")
     public static void testUserIsNavigatedToLoginPageWhenTheAgeIsGreaterThanTwentyFourYears()  {
 
         SoftAssert softAssert = new SoftAssert();
@@ -90,7 +106,7 @@ public class LandingTest extends TestBase {
         softAssert.assertEquals(CustomerLogin.getMyAccountTitle(),myAccountTitle,"User not not successfully logged in");
         softAssert.assertAll();
     }
-    @AfterClass
+    @AfterTest
     public static void quitDriver(){
         Landing.quitDriver();
     }
