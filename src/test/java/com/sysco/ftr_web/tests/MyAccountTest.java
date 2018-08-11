@@ -33,32 +33,31 @@ public class MyAccountTest extends TestBase {
         Landing.clickNineteenNinetyThreeYear();
         Landing.clickRememberMe();
         Landing.clickEnter();
-        //CustomerLogin.waitTillHomePageIsLoaded();
         Landing.clickMyAccount();
 
         CustomerLogin.loginUsingValidCredentials();
         MyAccount.waitTillMyAccountPageLoaded();
     }
 
-    @Test(description = "TC-10", alwaysRun = true)
+    @Test(description = "TC-11", alwaysRun = true)
     public static void testCorrectUserNameIsDisplayed() {
-
         SoftAssert softAssert = new SoftAssert();
-        String usernameAndEmail="william jacob\nwilliamjacob802@gmail.com";
-        softAssert.assertEquals(MyAccount.getUsernameAndEmail(),usernameAndEmail,"Incorrect Username and Email");
+        String usernameAndEmail = "william jacob\nwilliamjacob802@gmail.com";
+        softAssert.assertEquals(MyAccount.getUsernameAndEmail(), usernameAndEmail, "Incorrect Username and Email");
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-11",dependsOnMethods = "testCorrectUserNameIsDisplayed")
+    @Test(description = "TC-12", dependsOnMethods = "testCorrectUserNameIsDisplayed")
     public static void testRemoveCartItemsIfExist() throws AWTException {
-        SoftAssert softAssert=new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         MyAccount.clickCart();
         MyAccount.clearCart();
-        softAssert.assertEquals(MyAccount.getCartQuantityAsString(),"0","Cart quantity not equal to 0");
+        softAssert.assertEquals(MyAccount.getCartQuantityAsString(), "0", "Cart quantity not equal to 0");
         softAssert.assertAll();
     }
+
     @AfterClass
-    public static void quitDriver(){
+    public static void quitDriver() {
         MyAccount.quitDriver();
     }
 

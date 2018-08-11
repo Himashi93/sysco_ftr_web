@@ -44,8 +44,9 @@ public class GiftsTest extends TestBase {
         CanCooler.clickAddToCart();
 
     }
+
     @AfterClass
-    public static void quitDriver(){
+    public static void quitDriver() {
         Gifts.quitDriver();
     }
 

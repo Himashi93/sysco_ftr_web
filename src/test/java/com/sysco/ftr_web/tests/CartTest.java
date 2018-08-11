@@ -9,11 +9,10 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.awt.*;
-import java.io.UnsupportedEncodingException;
 
 public class CartTest extends TestBase {
     @BeforeClass
-    public void init(ITestContext iTestContext) throws UnsupportedEncodingException {
+    public void init(ITestContext iTestContext)  {
         syscoLabQCenter.setModule("report_himashi");
         syscoLabQCenter.setFeature("Bundabergrum - Checkout");
         syscoLabQCenter.setClassName(CartTest.class.getName());
@@ -24,11 +23,10 @@ public class CartTest extends TestBase {
         Landing.clickDrpMonth();
         Landing.clickJanuaryMonth();
         Landing.clickDrpYear();
+
         Landing.clickNineteenNinetyThreeYear();
         Landing.clickRememberMe();
         Landing.clickEnter();
-
-        //CustomerLogin.waitTillHomePageIsLoaded();
         Landing.clickMyAccount();
         CustomerLogin.loginUsingValidCredentials();
         MyAccount.waitTillMyAccountPageLoaded();
@@ -38,7 +36,7 @@ public class CartTest extends TestBase {
         CanCooler.clickAddToCart();
     }
 
-    @Test(description = "TC-11", alwaysRun = true)
+    @Test(description = "TC-14", alwaysRun = true)
     public static void testAddedProductOnCart() {
         SoftAssert softAssert = new SoftAssert();
         MyAccount.clickCart();
@@ -50,83 +48,83 @@ public class CartTest extends TestBase {
 
     }
 
-    @Test(description = "TC-12", alwaysRun = true, dependsOnMethods = "testAddedProductOnCart")
+    @Test(description = "TC-15", alwaysRun = true, dependsOnMethods = "testAddedProductOnCart")
     public static void testProceedToCheckoutAndVerifyFirstNameAndLastName() {
         SoftAssert softAssert = new SoftAssert();
         CanCooler.clickCheckout();
-        //Cart.waitTillCartPageLoaded();
         Cart.clickProceedToCheckout();
         String firstName = "william";
         String lastName = "jacob";
-        softAssert.assertEquals(CheckOutFirst.getFirstName(), firstName, "Incorrect first name");
-        softAssert.assertEquals(CheckOutFirst.getLastName(), lastName, "Incorrect last name");
+        softAssert.assertEquals(CheckOut.getFirstName(), firstName, "Incorrect first name");
+        softAssert.assertEquals(CheckOut.getLastName(), lastName, "Incorrect last name");
         softAssert.assertAll();
 
     }
 
-    @Test(description = "TC-14", alwaysRun = true, dependsOnMethods = "testProceedToCheckoutAndVerifyFirstNameAndLastName")
+    @Test(description = "TC-16", alwaysRun = true, dependsOnMethods = "testProceedToCheckoutAndVerifyFirstNameAndLastName")
     public static void testContinueButtonFunctionalityWithoutAddingMandatoryFields() {
         SoftAssert softAssert = new SoftAssert();
-        CheckOutFirst.clearAddressOne();
-        CheckOutFirst.clearTelephone();
-        CheckOutFirst.clearPostCode();
-        CheckOutFirst.clickContinue();
+        CheckOut.clearAddressOne();
+        CheckOut.clearTelephone();
+        CheckOut.clearPostCode();
+        CheckOut.clickDeliveryAddressContinue();
         String msgFieldRequired = "This is a required field.";
-        softAssert.assertEquals(CheckOutFirst.getAddressRequiredMsg(), msgFieldRequired, "Incorrect field required message'");
-        softAssert.assertEquals(CheckOutFirst.getContactNumberRequiredMsg(), msgFieldRequired, "Incorrect field required message'");
-        softAssert.assertEquals(CheckOutFirst.getPostCodeMsg(), msgFieldRequired, "Incorrect field required message'");
+        softAssert.assertEquals(CheckOut.getAddressRequiredMsg(), msgFieldRequired, "Incorrect field required message'");
+        softAssert.assertEquals(CheckOut.getContactNumberRequiredMsg(), msgFieldRequired, "Incorrect field required message'");
+        softAssert.assertEquals(CheckOut.getPostCodeMsg(), msgFieldRequired, "Incorrect field required message'");
         softAssert.assertAll();
+
     }
 
-    @Test(description = "TC-15", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityWithoutAddingMandatoryFields")
+    @Test(description = "TC-17", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityWithoutAddingMandatoryFields")
     public static void testContinueButtonFunctionalityAddingValidPostalCode() throws AWTException {
-        SoftAssert softAssert = new SoftAssert();
-        CheckOutFirst.setAddressOne();
-        CheckOutFirst.setContactNumber();
-        CheckOutFirst.clearPostCode();
-        CheckOutFirst.clickContinue();
-//        String msgFieldRequired = "This is a required field.";
-//        softAssert.assertEquals(CheckOutFirst.getPostCodeMsg(), msgFieldRequired, "IncorrectTitle");
-        softAssert.assertAll();
+        CheckOut.setAddressOne();
+        CheckOut.setContactNumber();
+        CheckOut.clearPostCode();
+        CheckOut.setPostalCode();
+        CheckOut.clickDeliveryAddressContinue();
+
     }
 
-    @Test(description = "TC-16", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityAddingValidPostalCode")
+    @Test(description = "TC-18", alwaysRun = true, dependsOnMethods = "testContinueButtonFunctionalityAddingValidPostalCode")
     public static void testVerifyDeliveryOptions() {
         SoftAssert softAssert = new SoftAssert();
-        String flateRate = "Flate Rate $15.00";
-        softAssert.assertEquals(CheckOutFirst.getDeliveryOptions(), flateRate, "Invalid Delivery options");
-        CheckOutFirst.clickContinue();
-        CheckOutFirst.waitTillPaymentInforLoaded();
+        softAssert.assertTrue(CheckOut.isChkShippingAuthorizedSelected(), "Delivery Options not confirmed");
+        CheckOut.clickShippingMethodContinueButton();
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-17", alwaysRun = true, dependsOnMethods = "testVerifyDeliveryOptions")
+    @Test(description = "TC-19", alwaysRun = true, dependsOnMethods = "testVerifyDeliveryOptions")
     public static void testUserIsAbleToProceedWithEmptyCreditCardAndCCVOptions() {
+        CheckOut.waitTillPaymentInforLoaded();
+        CheckOut.clickRdbCreditCard();
         SoftAssert softAssert = new SoftAssert();
-        CheckOutFirst.clickRdbCreditCard();
-        CheckOutFirst.enterCreditCardNumber("");
-        CheckOutFirst.enterCCV("");
-        CheckOutFirst.clickChkAgreement();
+        CheckOut.enterCreditCardNumber("");
+        CheckOut.enterCCV("");
+        CheckOut.clickChkAgreement();
+        CheckOut.clickPurchaseMyOrder();
         softAssert.assertAll();
     }
 
-    @Test(description = "TC-18", alwaysRun = true, dependsOnMethods = "testUserIsAbleToProceedWithEmptyCreditCardAndCCVOptions")
+    @Test(description = "TC-20", alwaysRun = true, dependsOnMethods = "testUserIsAbleToProceedWithEmptyCreditCardAndCCVOptions")
     public static void testUserIsAbleToProceedWithInvalidCreditCardNumber() {
         SoftAssert softAssert = new SoftAssert();
-        CheckOutFirst.clickRdbCreditCard();
-        String creditCardNumber = "333300122256789";
+        CheckOut.clickRdbCreditCard();
+        String creditCardNumber = "8333300122256789";
         String CCV = "1234";
-        CheckOutFirst.enterCreditCardNumber(creditCardNumber);
-        CheckOutFirst.enterCCV(CCV);
-        CheckOutFirst.clickChkAgreement();
-        CheckOutFirst.clickPurchaseMyOrder();
-        String invalidCreditCardNumberMessage = "Credit card type is not allowed for this payment method.";
-        softAssert.assertEquals(CheckOutFirst.getInvalidCreditCardNumberMessage(), invalidCreditCardNumberMessage, "Message is not correct");
+        CheckOut.clearCreditCardNumber();
+        CheckOut.enterCreditCardNumber(creditCardNumber);
+        CheckOut.enterCCV(CCV);
+        CheckOut.clickChkAgreement();
+        CheckOut.clickPurchaseMyOrder();
+        String invalidCreditCardNumberMessage = "Please enter a valid credit card number.";
+        softAssert.assertEquals(CheckOut.getInvalidCreditCardNumberMessage(), invalidCreditCardNumberMessage, "Message is not correct");
         softAssert.assertAll();
     }
+
     @AfterClass
     public void quitDriver() {
-        CheckOutFirst.quitDriver();
+        CheckOut.quitDriver();
     }
 
 

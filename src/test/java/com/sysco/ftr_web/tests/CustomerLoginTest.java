@@ -31,16 +31,13 @@ public class CustomerLoginTest extends TestBase {
         Landing.clickNineteenNinetyThreeYear();
         Landing.clickRememberMe();
         Landing.clickEnter();
-        //CustomerLogin.waitTillHomePageIsLoaded();
         Landing.clickMyAccount();
-        //MyAccount.waitTillMyAccountPageLoaded();
+
     }
 
     @Test(description = "TC-6", alwaysRun = true)
     public static void testVerifyUIComponentsOfCustomerLoginPage()  {
-        //CustomerLogin.waitTillCustomerLoginPageLoaded();
         SoftAssert softAssert = new SoftAssert();
-        // softAssert.assertTrue( CustomerLogin.isLoginButtonDisplayed(),"Login button in not displayed");
         softAssert.assertTrue(CustomerLogin.isLoginButtonEnabled(), "Login button in not enabled");
         softAssert.assertTrue(CustomerLogin.isEmailTextFieldDisplayed(), "Email text field is not visible");
         softAssert.assertTrue(CustomerLogin.isPasswordTextFieldDisplayed(), "Password text field is not visible");
@@ -50,7 +47,6 @@ public class CustomerLoginTest extends TestBase {
 
     @Test(description = "TC-7", alwaysRun = true,dependsOnMethods = "testVerifyUIComponentsOfCustomerLoginPage")
     public static void testVerifyUserCanLoginUsingValidCredentials() {
-
         CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.loginUsingValidCredentials();
         String welcomeMessage = "HELLO, WILLIAM JACOB!";
@@ -87,7 +83,6 @@ public class CustomerLoginTest extends TestBase {
     @Test(description = "TC-10", alwaysRun = true, dependsOnMethods = "testUserLoginUsingInvalidPassword")
     public static void testUserLoginUsingEmptyCredentials() {
         SoftAssert softAssert = new SoftAssert();
-        //CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.loginUsingEmptyCredentials();
         String msgeRequiredField = "This is a required field.";
         softAssert.assertEquals(CustomerLogin.getEmailRequiredMessage(), msgeRequiredField, "Invalid message");

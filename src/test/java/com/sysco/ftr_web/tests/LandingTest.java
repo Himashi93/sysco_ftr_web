@@ -24,7 +24,7 @@ public class LandingTest extends TestBase {
 
     }
 
-    @Test(description = "TC-1", alwaysRun = true,priority = 1)
+    @Test(description = "TC-1", alwaysRun = true, priority = 1)
     public static void testMessageIsDisplayedForAgeLessThanTwentyFourYears() {
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpDay();
@@ -40,8 +40,9 @@ public class LandingTest extends TestBase {
         softAssert.assertAll();
         Landing.deleteAllCookies();
     }
+
     @Test(description = "TC-2", dependsOnMethods = "testMessageIsDisplayedForAgeLessThanTwentyFourYears")
-    public static void testUserIsNavigatedToLoginPageWithoutEnteringTheYear()  {
+    public static void testUserIsNavigatedToLoginPageWithoutEnteringTheYear() {
 
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpDay();
@@ -56,8 +57,8 @@ public class LandingTest extends TestBase {
         Landing.deleteAllCookies();
     }
 
-    @Test(description = "TC-3", alwaysRun = true,dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheYear")
-    public static void testUserIsNavigatedToLoginPageWithoutEnteringTheMonth()  {
+    @Test(description = "TC-3", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheYear")
+    public static void testUserIsNavigatedToLoginPageWithoutEnteringTheMonth() {
 
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpDay();
@@ -72,8 +73,8 @@ public class LandingTest extends TestBase {
         Landing.deleteAllCookies();
     }
 
-    @Test(description = "TC-4", alwaysRun = true,dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheYear")
-    public static void testUserIsNavigatedToLoginPageWithoutEnteringTheDate()  {
+    @Test(description = "TC-4", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheYear")
+    public static void testUserIsNavigatedToLoginPageWithoutEnteringTheDate() {
 
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpMonth();
@@ -89,7 +90,7 @@ public class LandingTest extends TestBase {
     }
 
     @Test(description = "TC-5", alwaysRun = true, dependsOnMethods = "testUserIsNavigatedToLoginPageWithoutEnteringTheMonth")
-    public static void testUserIsNavigatedToLoginPageWhenTheAgeIsGreaterThanTwentyFourYears()  {
+    public static void testUserIsNavigatedToLoginPageWhenTheAgeIsGreaterThanTwentyFourYears() {
 
         SoftAssert softAssert = new SoftAssert();
         Landing.clickDrpDay();
@@ -102,18 +103,15 @@ public class LandingTest extends TestBase {
         Landing.clickEnter();
         CustomerLogin.waitTillCustomerLoginPageLoaded();
         CustomerLogin.waitTillCustomerLoginPageLoaded();
-        String myAccountTitle="My Account";
-        softAssert.assertEquals(CustomerLogin.getMyAccountTitle(),myAccountTitle,"User not not successfully logged in");
+        String myAccountTitle = "My Account";
+        softAssert.assertEquals(CustomerLogin.getMyAccountTitle(), myAccountTitle, "User not not successfully logged in");
         softAssert.assertAll();
     }
+
     @AfterTest
-    public static void quitDriver(){
+    public static void quitDriver() {
         Landing.quitDriver();
     }
-
-
-
-
 
 
 }
