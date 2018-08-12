@@ -54,7 +54,7 @@ public class CheckOutPage extends CustomerLoginPage {
     }
 
     public void clickBtnDeliveryAddressContinue() {
-        bunderbergUI.click(btnDeliveryAddressContinue);
+        bunderbergUI.clickWithJavascript(btnDeliveryAddressContinue);
         bunderbergUI.sleep(2);
     }
 

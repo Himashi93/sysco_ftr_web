@@ -19,7 +19,6 @@ public class CartTest extends TestBase {
         Landing.loadLandingPage();
         Landing.clickDrpDay();
         Landing.clickFirstDate();
-
         Landing.clickDrpMonth();
         Landing.clickJanuaryMonth();
         Landing.clickDrpYear();
